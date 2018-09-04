@@ -53,7 +53,6 @@ while (distance < 0) {
     countDownDate.setSeconds(countDownDate.getSeconds() + minutes*60+seconds)
  
     distance = countDownDate - now;
-  distance.FontSize = "50";
 }
  
 
@@ -73,7 +72,7 @@ var x = setInterval(function() {
     // Output the result in an element with id="demo"
     document.getElementById("countdown").innerHTML = hours + "h "
     + minutes + "m " + seconds + "s ";
- 
+  document.getElementById("countdown").font-size = "50"
     console.log(distance)
  
     if (distance < 0) {
