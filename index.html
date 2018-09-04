@@ -72,7 +72,6 @@ var x = setInterval(function() {
     // Output the result in an element with id="demo"
     document.getElementById("countdown").innerHTML = hours + "h "
     + minutes + "m " + seconds + "s ";
-  document.getElementById("countdown").font-size = "50"
     console.log(distance)
  
     if (distance < 0) {
@@ -97,7 +96,7 @@ var x = setInterval(function() {
       <div class="center-object">
         <section class="me">
           <h1 class="title" style="width: 100%;text-align: center">Time until cube moves:</h1>
-          <span class="undertitle" style="width: 100%;text-align: center" id="countdown"></span>
+          <span class="undertitle" style="width: 100%;text-align: center" id="countdown"><font size = "24"></span>
         </section>
         <div class="buttons">
           <a </a>
